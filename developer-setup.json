@@ -1,0 +1,15 @@
+{
+    "run_list": [
+        "development"
+    ],
+    "base_packages": [
+        "build-essential"
+    ],
+    "users": {
+        "toranb": {
+            "home":"/home/toranb/",
+            "machine_name":"toran billups",
+            "email_address":"toranb@gmail.com"
+        }
+    }
+}
