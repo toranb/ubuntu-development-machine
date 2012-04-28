@@ -1,10 +1,13 @@
 {
     "run_list": [
         "development",
-        "development::bash-profile"
+        "development::bash-profile",
+        "development::virtualenv"
     ],
     "base_packages": [
-        "build-essential"
+        "build-essential",
+        "python-setuptools",
+	    "python-dev"
     ],
     "easy_install_packages": [
         "pip"
