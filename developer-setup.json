@@ -5,6 +5,13 @@
     "base_packages": [
         "build-essential"
     ],
+    "easy_install_packages": [
+        "pip"
+    ],
+    "pip_packages": [
+        "virtualenv",
+        "virtualenvwrapper"
+    ],
     "users": {
         "toranb": {
             "home":"/home/toranb/",
