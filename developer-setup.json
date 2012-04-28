@@ -2,12 +2,16 @@
     "run_list": [
         "development",
         "development::bash-profile",
-        "development::virtualenv"
+        "development::virtualenv",
+        "development::ruby-dev"
     ],
     "base_packages": [
         "build-essential",
         "python-setuptools",
-	    "python-dev"
+	    "python-dev",
+        "ruby",
+    	"rubygems",
+        "ruby-dev"
     ],
     "easy_install_packages": [
         "pip"
