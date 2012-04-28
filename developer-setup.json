@@ -4,7 +4,8 @@
         "development::bash-profile",
         "development::virtualenv",
         "development::ruby-dev",
-        "development::vim"
+        "development::vim",
+        "development::node"
     ],
     "base_packages": [
         "build-essential",
