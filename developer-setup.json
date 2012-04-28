@@ -13,7 +13,12 @@
 	    "python-dev",
         "ruby",
 	    "rubygems",
-        "ruby-dev"
+        "ruby-dev",
+        "smbfs",
+        "mysql-client",
+        "libmysqlclient-dev",
+        "sqlite3",
+        "openjdk-7-jdk"
     ],
     "easy_install_packages": [
         "pip"
