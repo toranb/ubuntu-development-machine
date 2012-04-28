@@ -1,6 +1,7 @@
 {
     "run_list": [
-        "development"
+        "development",
+        "development::bash-profile"
     ],
     "base_packages": [
         "build-essential"

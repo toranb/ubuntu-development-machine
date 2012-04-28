@@ -1,0 +1,7 @@
+alias status='git status'
+alias add='git add . -A'
+alias commit='git commit -am'
+alias pull='git pull --rebase'
+alias push='git push origin master'
+alias diff='git diff'
+alias pycclean='find . -name '*.pyc' -delete'
