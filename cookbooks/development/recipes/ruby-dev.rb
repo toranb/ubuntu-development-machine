@@ -5,4 +5,5 @@ execute "setup-rake-for-local-development" do
   action :run
 end
 
-execute "gem install rails --version 3.0.0"
+execute "gem install mysql"
+execute "gem install rails --version=3.1"
