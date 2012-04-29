@@ -3,6 +3,7 @@ if node[:users]
 
     home_dir = info[:home]
     execute "rm -rf #{home_dir}.bash_aliases"
+    execute "rm -rf #{home_dir}.bash_colors.sh"
     execute "rm -rf #{home_dir}.gitconfig"
     execute "rm -rf #{home_dir}.bash_profile"
     execute "rm -rf #{home_dir}.bashrc"
@@ -19,6 +20,13 @@ if node[:users]
       owner username
       group username
       mode 0764
+    end
+
+    cookbook_file "#{home_dir}.bash_colors.sh" do
+        source ".bash_colors.sh"
+        owner username
+        group username
+        mode 0764
     end
 
     template "#{home_dir}.bashrc" do
