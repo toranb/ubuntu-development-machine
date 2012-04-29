@@ -1,11 +1,12 @@
 This install was written for Ubuntu 12.04 and works best on a fresh install
 
-If you haven't already you need to install git locally and pull down this project (sudo apt-get install git-core -y)
+If you haven't already you need to install git locally and pull down this project
+    1.) sudo apt-get install git-core -y
+    2.) git clone https://github.com/toranb/ubuntu-development-machine.git
 
 Please modify the user config in developer-setup.json before you kick off the installer
     1.) modify machine_name and email_address to be what you want in the .gitconfig file that will be put in your home directory
     2.) modify the username listed and home to match the user you plan to install with
 
 To run the chef script and setup your linux development machine:
-  sudo ./install developer-setup.json 
-
+    sudo ./install.sh developer-setup.json
