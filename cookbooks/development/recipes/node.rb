@@ -17,8 +17,8 @@ if node[:users]
           execute "cd #{node_extracted_dir}joyent-node-fd97767/ && ./configure && make && make install"
 
           execute "npm install jasmine-node -g"
-          execute "npm install jsdom"
-          execute "npm install jasmine-jquery"
+          execute "npm install jsdom -g"
+          execute "npm install jasmine-jquery -g"
       end
 
   end
