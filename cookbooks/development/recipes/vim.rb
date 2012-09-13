@@ -19,6 +19,8 @@ if node[:users]
       execute "cd #{home_dir}.vim && mkdir -p _temp"
       execute "chmod 777 #{home_dir}.vim/_backup"
       execute "chmod 777 #{home_dir}.vim/_temp"
+
+      execute "sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack"
     end
 end
 

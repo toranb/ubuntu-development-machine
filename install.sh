@@ -14,7 +14,6 @@ if ! test -f "`which chef-solo`"; then
 	apt-get update -o Acquire::http::No-Cache=True
 	apt-get install -y curl git-core build-essential zlib1g-dev libssl-dev openssl libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev
 	gem install ruby-shadow chef --no-rdoc --no-ri
-	sudo ln -sf /usr/bin/ruby1.9.1 /usr/bin/ruby
 fi
 
 `which chef-solo` --config solo.rb --json-attributes $json

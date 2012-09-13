@@ -6,20 +6,23 @@
         "development::ruby-dev",
         "development::vim",
         "development::node",
+        "development::yeoman",
         "development::chrome"
     ],
     "base_packages": [
         "build-essential",
         "python-setuptools",
-	    "python-dev",
+	"python-dev",
         "ruby",
-	    "rubygems",
+	"rubygems",
         "ruby-dev",
         "smbfs",
         "mysql-client",
         "libmysqlclient-dev",
         "sqlite3",
-        "openjdk-7-jdk"
+        "openjdk-7-jdk",
+        "exuberant-ctags",
+        "ack-grep"
     ],
     "easy_install_packages": [
         "pip"
