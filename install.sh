@@ -8,12 +8,13 @@ if [ -z "$json" ]; then
     exit
 fi
 
-export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
-
 if ! test -f "`which chef-solo`"; then
 	apt-get update -o Acquire::http::No-Cache=True
-	apt-get install -y curl git-core build-essential zlib1g-dev libssl-dev openssl libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev
+	apt-get install -y curl git-core build-essential zlib1g-dev libssl-dev openssl
 	gem install ruby-shadow chef --no-rdoc --no-ri
 fi
 
 `which chef-solo` --config solo.rb --json-attributes $json
+
+#install rvm directly from script as non-root user
+./install-rvm.sh
