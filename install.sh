@@ -13,6 +13,7 @@ export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 if ! test -f "`which chef-solo`"; then
 	apt-get update -o Acquire::http::No-Cache=True
 	apt-get install -y curl git-core build-essential zlib1g-dev libssl-dev openssl libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev xchm
+	apt-get install -y eclipse eclipse-jdt eclipse-pde eclipse-platform eclipse-rcp
 	gem install ruby-shadow chef --no-rdoc --no-ri
 	sudo ln -sf /usr/bin/ruby1.9.1 /usr/bin/ruby
 fi
