@@ -11,6 +11,7 @@ fi
 if ! test -f "`which chef-solo`"; then
 	apt-get update -o Acquire::http::No-Cache=True
 	apt-get install -y curl git-core build-essential zlib1g-dev libssl-dev openssl
+	apt-get install -y eclipse eclipse-jdt eclipse-pde eclipse-platform eclipse-rcp
 	gem install ruby-shadow chef --no-rdoc --no-ri
 fi
 
