@@ -32,10 +32,10 @@
         "virtualenvwrapper"
     ],
     "users": {
-        "toranb": {
-            "home":"/home/toranb/",
-            "machine_name":"toran billups",
-            "email_address":"toranb@gmail.com"
+        "dvizzini": {
+            "home":"/home/dvizzini/",
+            "machine_name":"Daniel Vizzini",
+            "email_address":"dvizzini@gmail.com"
         }
     }
 }
