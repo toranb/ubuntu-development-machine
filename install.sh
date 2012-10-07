@@ -14,19 +14,13 @@ echo ".............Updating package cache..........."
 sudo apt-get update -o Acquire::http::No-Cache=True >>$LOG_FILE
 echo $DONE
 
-echo ".................Installing Curl................."
-sudo apt-get -y install curl >>$LOG_FILE
+echo "............Preparing RVM Install............."
+sudo apt-get -y install curl build-essential zlib1g-dev libreadline-dev libssl-dev libxml2-dev >>$LOG_FILE
 echo $DONE
 
 # Install RVM (Ruby Version Manager)
 echo ".................Installing RVM.................."
-curl -L get.rvm.io | bash -s stable >>$LOG_FILE
-
-# fallback for the above command (in case of certificates errors)
-if ($? !=0)
-then
-  curl -kL get.rvm.io | bash -s stable
-fi  
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer) >>$LOG_FILE
 echo $DONE
 
 echo "..................Loading RVM...................."
@@ -38,9 +32,9 @@ sudo apt-get install -y eclipse eclipse-jdt eclipse-pde eclipse-platform eclipse
 #TODO: get Scala plugins via http://stackoverflow.com/questions/7163970/how-do-you-automate-the-installation-of-eclipse-plugins-with-command-line
 echo $DONE
 
-# Install Additional Dependencies (Removed nodejs from list to avoid cookbook conflicts. Kept everything else although I doubt I will use many tools. -DV)
-echo "...Installing More Dependencies...."
-sudo apt-get -y install build-essential git-core openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+# Install Additional Dependencies
+echo "..........Installing More Dependencies...."
+sudo apt-get -y install git-core openssl libssl-dev libyaml-dev
 echo $DONE
 
 # Done with sudo mode
