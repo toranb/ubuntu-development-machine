@@ -15,15 +15,15 @@ if [ -z "$json" ]; then
     exit
 fi
 
-echo ".............Updating package cache..........."
+echo "............Updating package cache............"
 sudo apt-get update -o Acquire::http::No-Cache=True >$LOG_FILE
 
-echo "............Preparing RVM Install............."
+echo ".......Installing Ruby and dependencies......."
 sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
 export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 
 echo "................Installing RVM................"
-curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable >>$LOG_FILE
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 echo ".................Loading RVM.................."
 source ~/.rvm/scripts/rvm >>$LOG_FILE
