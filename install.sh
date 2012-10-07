@@ -16,6 +16,7 @@ echo $DONE
 
 echo "............Preparing RVM Install............."
 sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
+export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 echo $DONE
 
 # Install RVM (Ruby Version Manager)
@@ -27,7 +28,7 @@ echo "..................Loading RVM...................."
 source ~/.rvm/scripts/rvm >>$LOG_FILE
 echo $DONE
 
-# Done with sudo mode
+# Exiting sudo mode
 
 # Install Ruby v 1.8.7
 echo ".............Installing Ruby v 1.8.7............."
@@ -46,6 +47,8 @@ echo $DONE
 echo "................Installing Chef..................."
 gem install ruby-shadow chef --no-rdoc --no-ri >>$LOG_FILE
 echo $DONE
+
+# Back into sudo
 
 echo "...............Following Recipes.................."
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
