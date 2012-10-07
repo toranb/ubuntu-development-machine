@@ -18,10 +18,16 @@
         "sqlite3",
         "ack-grep",
 	"postgresql",
-	"nginx",
+	"postgresql-server-dev-all",
+	"libpq-dev",
+ 	"nginx",
 	"acl",
-	"libpq-dev"
-    ],
+	"eclipse",
+	"eclipse-jdt",
+	"eclipse-pde",
+	"eclipse-platform",
+	"eclipse-rcp"
+   ],
     "easy_install_packages": [
         "pip"
     ],

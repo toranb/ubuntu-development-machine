@@ -15,7 +15,7 @@ sudo apt-get update -o Acquire::http::No-Cache=True >>$LOG_FILE
 echo $DONE
 
 echo "............Preparing RVM Install............."
-sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev libyaml-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
+sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
 echo $DONE
 
 # Install RVM (Ruby Version Manager)
@@ -25,15 +25,6 @@ echo $DONE
 
 echo "..................Loading RVM...................."
 source ~/.rvm/scripts/rvm >>$LOG_FILE
-echo $DONE
-
-echo "..............Installing Eclipse................."
-sudo apt-get install -y eclipse eclipse-jdt eclipse-pde eclipse-platform eclipse-rcp
-echo $DONE
-
-# Install Additional Dependencies
-echo "..........Installing More Dependencies...."
-sudo apt-get -y install libyaml-dev
 echo $DONE
 
 # Done with sudo mode
@@ -48,15 +39,9 @@ echo ".............Installing Ruby v $RUBY_VERSION............."
 rvm install $RUBY_VERSION >>$LOG_FILE
 echo $DONE
 
-# Select and Set latest version of ruby as the default so that
-# You won't have to select each time you start a terminal
-
 echo "........Setting the default version of Ruby......."
 rvm --default use $RUBY_VERSION >>$LOG_FILE
 echo $DONE
-
-echo "You are now using Ruby $RUBY_VERSION by default."
-echo "Use 'rvm --default <ruby_version>' to change this."
 
 echo "................Installing Chef..................."
 gem install ruby-shadow chef --no-rdoc --no-ri >>$LOG_FILE
