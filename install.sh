@@ -15,7 +15,7 @@ sudo apt-get update -o Acquire::http::No-Cache=True >>$LOG_FILE
 echo $DONE
 
 echo "............Preparing RVM Install............."
-sudo apt-get -y install curl build-essential zlib1g-dev libreadline-dev libssl-dev libxml2-dev >>$LOG_FILE
+sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev libyaml-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
 echo $DONE
 
 # Install RVM (Ruby Version Manager)
@@ -29,12 +29,11 @@ echo $DONE
 
 echo "..............Installing Eclipse................."
 sudo apt-get install -y eclipse eclipse-jdt eclipse-pde eclipse-platform eclipse-rcp
-#TODO: get Scala plugins via http://stackoverflow.com/questions/7163970/how-do-you-automate-the-installation-of-eclipse-plugins-with-command-line
 echo $DONE
 
 # Install Additional Dependencies
 echo "..........Installing More Dependencies...."
-sudo apt-get -y install git-core openssl libssl-dev libyaml-dev
+sudo apt-get -y install libyaml-dev
 echo $DONE
 
 # Done with sudo mode
