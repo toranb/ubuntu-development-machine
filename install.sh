@@ -18,9 +18,9 @@ export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 
 # Install RVM (Ruby Version Manager)
 echo "................Installing RVM................."
-$LOG_FILE<< bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable >>$LOG_FILE
 
-echo "..................Loading RVM...................."
+echo ".................Loading RVM...................."
 source ~/.rvm/scripts/rvm >>$LOG_FILE
 
 # Exiting sudo mode
