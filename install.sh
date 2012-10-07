@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 # A simple Script for installing Rails on Ubuntu 12.04 LTS
 # It will also install the dependencies required as well as the RVM
 # Author: Ramesh Jha (rameshjha420@gmail.com),(http://blog.sudobits.com)
@@ -23,7 +24,7 @@ sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-d
 export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 
 echo "................Installing RVM................"
-bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer) >>$LOG_FILE
 
 echo ".................Loading RVM.................."
 source ~/.rvm/scripts/rvm >>$LOG_FILE
