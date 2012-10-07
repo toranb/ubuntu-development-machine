@@ -3,7 +3,6 @@
         "development",
         "development::bash-profile",
         "development::virtualenv",
-        "development::ruby-dev",
         "development::vim",
         "development::node",
         "development::yeoman",
@@ -16,13 +15,12 @@
         "ruby",
 	"rubygems",
         "ruby-dev",
-        "smbfs",
-        "mysql-client",
-        "libmysqlclient-dev",
         "sqlite3",
-        "openjdk-7-jdk",
-        "exuberant-ctags",
-        "ack-grep"
+        "ack-grep",
+	"postgresql",
+	"nginx",
+	"acl",
+	"libpq-dev"
     ],
     "easy_install_packages": [
         "pip"

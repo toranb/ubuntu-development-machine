@@ -67,4 +67,4 @@ echo "...............Following Recipes.................."
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
 echo $DONE
 
-sudo reboot
+sudo reboot now
