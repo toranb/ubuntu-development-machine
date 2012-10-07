@@ -67,8 +67,4 @@ echo "...............Following Recipes.................."
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
 echo $DONE
 
-echo "######################################"
-echo "###### Installation Completed ########"
-echo "######################################"
-
-echo "if something went wrong then checkout the log file $LOG_FILE"
+sudo reboot
