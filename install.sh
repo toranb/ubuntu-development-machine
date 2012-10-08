@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# A simple Script for installing Rails on Ubuntu 12.04 LTS
-# It will also install the dependencies required as well as the RVM
-# Author: Ramesh Jha (rameshjha420@gmail.com),(http://blog.sudobits.com)
+# A script to install dependeencies before installing RVM and running Chef Cookbook
 # License: MIT 
 
 RUBY_VERSION="1.9.3"
@@ -48,4 +46,11 @@ gem install ruby-shadow chef --no-rdoc --no-ri >>$LOG_FILE
 echo ".............Following Recipes................"
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
 
-sudo reboot now
+while true; do
+    read -p "Reboot recommded would you like to reboot now? [Y/n]" yn
+    case $yn in
+        [Y]* ) sudo reboot now;;
+        [Nn]* ) exit 0;;
+        * ) echo "Please answer Yes or no.";;
+    esac
+done
