@@ -18,4 +18,4 @@ Please modify the user config in developer-setup.json before you kick off the in
 Run the Installer
 -----------------
 To run the chef script and setup your linux development machine:
-    sudo ./install.sh developer-setup.json
+	sudo ./install.sh developer-setup.json
