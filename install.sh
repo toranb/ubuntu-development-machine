@@ -20,7 +20,7 @@ echo "............Updating package cache............"
 sudo apt-get update -o Acquire::http::No-Cache=True >$LOG_FILE
 
 echo ".......Installing Ruby and dependencies......."
-sudo apt-get -y install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
+sudo apt-get -y --force-yes install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
 export PATH=$PATH:/var/lib/gems/1.9.1/bin:/usr/lib/ruby/1.9.1/
 
 echo "................Installing RVM................"
