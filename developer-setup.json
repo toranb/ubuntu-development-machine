@@ -12,9 +12,6 @@
         "build-essential",
         "python-setuptools",
 	"python-dev",
-        "ruby",
-	"rubygems",
-        "ruby-dev",
         "sqlite3",
         "ack-grep",
 	"postgresql",
@@ -38,7 +35,7 @@
     "users": {
         "dvizzini": {
             "home":"/home/dvizzini/",
-            "machine_name":"Daniel Vizzini",
+            "full_name":"Daniel Vizzini",
             "email_address":"dvizzini@gmail.com"
         }
     }
