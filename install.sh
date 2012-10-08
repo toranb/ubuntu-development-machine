@@ -17,7 +17,6 @@ if [ -z "$json" ]; then
 fi
 
 echo "............Updating package cache............"
-sudo apt-key adv --keyserver keyserver.ubuntu.com 40976EAF437D05B5
 sudo apt-get update -o Acquire::http::No-Cache=True >$LOG_FILE
 
 echo ".......Installing Ruby and dependencies......."
