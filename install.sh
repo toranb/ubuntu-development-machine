@@ -17,6 +17,7 @@ if [ -z "$json" ]; then
 fi
 
 echo "............Updating package cache............"
+sudo apt-key adv --keyserver keyserver.ubuntu.com 40976EAF437D05B5
 sudo apt-get update -o Acquire::http::No-Cache=True >$LOG_FILE
 
 echo ".......Installing Ruby and dependencies......."
@@ -49,7 +50,7 @@ echo ".............Following Recipes................"
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
 
 while true; do
-    read -p "Reboot recommended. Would you like to reboot now? [Yn]"
+    read -p "Reboot recommended. Would you like to reboot now? [Yn]" yn
     case $yn in
         [Y]* ) sudo reboot now;;
         [Nn]* ) exit;;
