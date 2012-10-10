@@ -4,10 +4,10 @@
 	"development::rvm",
         "development::bash-profile",
         "development::virtualenv",
-        "development::vim",
         "development::node",
         "development::yeoman",
-        "development::chrome"
+        "development::chrome",
+        "development::vim"
     ],
     "base_packages": [
         "build-essential",
@@ -37,7 +37,7 @@
         "1.8.7",
         "1.9.3"
     ],
-    "default_ruby_version": "1.9.3"
+    "default_ruby_version": "1.9.3",
     "users": {
         "dvizzini": {
             "home":"/home/dvizzini/",
