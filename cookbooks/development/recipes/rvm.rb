@@ -3,13 +3,16 @@ if node[:users]
 
 	rvm_installed = `which rvm`
 
-	if rvm_installed.empty?i
+	if rvm_installed.empty?
           home_dir = info[:home]
+          default_rvm = node[:default_ruby_version]
           execute "su -c 'bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)' #{username}"
           execute "su -c 'source #{home_dir}/.rvm/scripts/rvm' #{username}"
-          execute "su -c 'rvm install 1.8.7' #{username}" 
-          execute "su -c 'rvm install 1.8.7' #{username}" 
-	end
+          node[:ruby_versions].each_value di |version_number|
+            execute "su -c 'rvm install #{version_number}' #{username}" 
+          end
+	  execute "su -c 'rvm --default use #{default_rvm}' #{username}"
+        end
 
   end
 end
