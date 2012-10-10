@@ -1,10 +1,10 @@
 {
     "run_list": [
         "development",
+	"development::rvm",
         "development::bash-profile",
         "development::virtualenv",
         "development::vim",
-	"development::rvm",
         "development::node",
         "development::yeoman",
         "development::chrome"
