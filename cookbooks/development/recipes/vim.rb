@@ -13,7 +13,7 @@ if node[:users]
       execute "rm -rf #{home_dir}.vim"
 
       execute "cd #{home_dir} && git clone https://github.com/toranb/vimfiles.git #{home_dir}.vim"
-      execute "cd #{home_dir}.vim && bundle exec rake"
+      execute "cd #{home_dir}.vim && rake"
 
       execute "cd #{home_dir}.vim && mkdir -p _backup"
       execute "cd #{home_dir}.vim && mkdir -p _temp"

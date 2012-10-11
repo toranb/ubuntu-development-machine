@@ -6,11 +6,11 @@ if node[:users]
           home_dir = info[:home]
           default_rvm = node[:default_ruby_version]
           execute "su -c 'bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)' #{username}"
-          #execute "su -c 'source #{home_dir}/.rvm/scripts/rvm' #{username}"
+          execute "su -c 'source #{home_dir}/.rvm/scripts/rvm' #{username}"
           node[:ruby_versions].each do |version_number|
-            execute "su -c '#{home_dir}/.rvm/scripts/rvm install #{version_number}' #{username}" 
+            execute "su -c '#{home_dir}/.rvm/bin/rvm install #{version_number}' #{username}" 
           end
-	  execute "su -c '#{home_dir}/.rvm/scripts/rvm --default use #{default_rvm}' #{username}"
+	  execute "su -c '#{home_dir}/.rvm/bin/rvm --default use #{default_rvm}' #{username}"
         end
 
   end
