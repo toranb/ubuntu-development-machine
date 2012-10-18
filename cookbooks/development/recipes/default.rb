@@ -1,3 +1,5 @@
+execute "apt-get install rake"
+
 node[:base_packages].each do |pkg|
   package pkg do
     puts "installing #{pkg}..."
