@@ -10,7 +10,6 @@ if node[:users]
           node[:ruby_versions].each do |version_number|
             execute "su -c '#{home_dir}/.rvm/bin/rvm install #{version_number}' #{username}" 
           end
-	  execute "su -c '#{home_dir}/.rvm/bin/rvm --default use #{default_rvm}' #{username}"
         end
 
   end

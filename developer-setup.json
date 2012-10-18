@@ -37,7 +37,6 @@
         "1.8.7",
         "1.9.3"
     ],
-    "default_ruby_version": "1.9.3",
     "users": {
         "dvizzini": {
             "home":"/home/dvizzini/",

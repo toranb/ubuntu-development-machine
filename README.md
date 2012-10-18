@@ -1,8 +1,8 @@
 Ubuntu-Development-Machine
 ==========================
-This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu 12.04 development machine. Chef installs all pacages with the exception of Ruby, RVM, and their dependencies. Ruby is installed via bash so that Chef can run, and RVM is installed via bash so that it is not installed as root.
+This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu 12.04 development machine.
 
-Instaling the Installer
+Installing the Installer
 -----------------------
 If you have not already done so, install git locally and pull down this project
 
