@@ -15,6 +15,7 @@
 	"python-dev",
         "sqlite3",
         "ack-grep",
+        "rake",
 	"postgresql",
 	"postgresql-server-dev-all",
 	"libpq-dev",
