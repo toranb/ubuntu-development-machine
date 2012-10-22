@@ -8,8 +8,6 @@ package "vim-gnome"
 if node[:users]
     node[:users].each_pair do |username, info|
 
-      execute "apt-get install rake"
-
       home_dir = info[:home]
       execute "rm -rf #{home_dir}.vimrc"
       execute "rm -rf #{home_dir}.vim"
