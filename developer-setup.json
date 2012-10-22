@@ -1,29 +1,32 @@
 {
     "run_list": [
         "development",
+	"development::rvm",
         "development::bash-profile",
         "development::virtualenv",
-        "development::ruby-dev",
-        "development::vim",
         "development::node",
         "development::yeoman",
-        "development::chrome"
+        "development::chrome",
+        "development::vim"
     ],
     "base_packages": [
         "build-essential",
         "python-setuptools",
 	"python-dev",
-        "ruby",
-	"rubygems",
-        "ruby-dev",
-        "smbfs",
-        "mysql-client",
-        "libmysqlclient-dev",
         "sqlite3",
-        "openjdk-7-jdk",
-        "exuberant-ctags",
-        "ack-grep"
-    ],
+        "ack-grep",
+        "rake",
+	"postgresql",
+	"postgresql-server-dev-all",
+	"libpq-dev",
+ 	"nginx",
+	"acl",
+	"eclipse",
+	"eclipse-jdt",
+	"eclipse-pde",
+	"eclipse-platform",
+	"eclipse-rcp"
+   ],
     "easy_install_packages": [
         "pip"
     ],
@@ -31,11 +34,15 @@
         "virtualenv",
         "virtualenvwrapper"
     ],
+    "ruby_versions": [
+        "1.8.7",
+        "1.9.3"
+    ],
     "users": {
-        "toranb": {
-            "home":"/home/toranb/",
-            "machine_name":"toran billups",
-            "email_address":"toranb@gmail.com"
+        "dvizzini": {
+            "home":"/home/dvizzini/",
+            "full_name":"Daniel Vizzini",
+            "email_address":"dvizzini@gmail.com"
         }
     }
 }

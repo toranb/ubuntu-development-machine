@@ -42,7 +42,7 @@ if node[:users]
     template "#{home_dir}.gitconfig" do
       source "gitconfig.erb"
       variables(
-        :machine_name => info[:machine_name],
+        :full_name => info[:full_name],
         :email_address => info[:email_address]
       )
       owner username
