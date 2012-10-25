@@ -1,48 +1,51 @@
 {
-    "run_list": [
-        "development",
-	"development::rvm",
-        "development::bash-profile",
-        "development::virtualenv",
-        "development::node",
-        "development::yeoman",
-        "development::chrome",
-        "development::vim"
-    ],
-    "base_packages": [
-        "build-essential",
-        "python-setuptools",
-	"python-dev",
-        "sqlite3",
-        "ack-grep",
-        "rake",
-	"postgresql",
-	"postgresql-server-dev-all",
-	"libpq-dev",
- 	"nginx",
-	"acl",
-	"eclipse",
-	"eclipse-jdt",
-	"eclipse-pde",
-	"eclipse-platform",
-	"eclipse-rcp"
-   ],
-    "easy_install_packages": [
-        "pip"
-    ],
-    "pip_packages": [
-        "virtualenv",
-        "virtualenvwrapper"
-    ],
-    "ruby_versions": [
-        "1.8.7",
-        "1.9.3"
-    ],
-    "users": {
-        "dvizzini": {
-            "home":"/home/dvizzini/",
-            "full_name":"Daniel Vizzini",
-            "email_address":"dvizzini@gmail.com"
-        }
+  "run_list": [
+    "development",
+    "development::rvm",
+    "development::bash-profile",
+    "development::virtualenv",
+    "development::node",
+    "development::yeoman",
+    "development::chrome",
+    "development::vim"
+  ],
+  "base_packages": [
+    "build-essential",
+    "python-setuptools",
+    "python-dev",
+    "openjdk-7-jdk"
+    "mysql-client",
+    "libmysqlclient-dev",
+    "sqlite3",
+    "ack-grep",
+    "rake",
+    "postgresql",
+    "postgresql-server-dev-all",
+    "libpq-dev",
+    "nginx",
+    "acl",
+    "eclipse",
+    "eclipse-jdt",
+    "eclipse-pde",
+    "eclipse-platform",
+    "eclipse-rcp"
+  ],
+  "easy_install_packages": [
+    "pip"
+  ],
+  "pip_packages": [
+    "virtualenv",
+    "virtualenvwrapper"
+  ],
+  "ruby_versions": [
+    "1.8.7",
+    "1.9.3"
+  ],
+  "users": {
+    "dvizzini": {
+      "home":"/home/dvizzini/",
+      "full_name":"Daniel Vizzini",
+      "email_address":"dvizzini@gmail.com"
     }
+  }
 }
