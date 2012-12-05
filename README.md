@@ -1,13 +1,13 @@
 Ubuntu-Development-Machine
 ==========================
-This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu 12.04 development machine.
+This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu 12.04/12.10 development machine.
 
 Installing the Installer
 -----------------------
 If you have not already done so, install git locally and pull down this project
 
 1. sudo apt-get install git-core -y
-2. git clone https://github.com/dvizzini/ubuntu-development-machine.git chef
+2. git clone https://github.com/toranb/ubuntu-development-machine.git chef
 
 Configuring the Installer
 -------------------------
