@@ -5,6 +5,7 @@
     "development::bash-profile",
     "development::virtualenv",
     "development::node",
+    "development::phantomjs",
     "development::yeoman",
     "development::chrome",
     "development::vim"
