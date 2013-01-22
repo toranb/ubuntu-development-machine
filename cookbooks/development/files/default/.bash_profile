@@ -78,4 +78,4 @@ grb_git_prompt() {
     fi
 }
 
-PS1="\u@\h:\W\$(grb_git_prompt) $ "
+PS1="\u@\h:\W\$(grb_git_prompt)\r\n$ "
