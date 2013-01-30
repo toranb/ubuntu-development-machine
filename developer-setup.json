@@ -24,6 +24,8 @@
     "postgresql-server-dev-all",
     "libpq-dev",
     "nginx",
+    "libxslt-dev",
+    "libxml2-dev",
     "acl",
     "eclipse",
     "eclipse-jdt",
