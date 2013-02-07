@@ -23,7 +23,12 @@ echo ".......Installing Ruby and dependencies......."
 sudo apt-get -y --force-yes install build-essential curl zlib1g-dev libreadline-dev libssl-dev libxml2-dev openssl libyaml-dev libopenssl-ruby1.9.1 ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev >>$LOG_FILE
 
 echo "...............Installing Chef................"
-gem install ruby-shadow chef --no-rdoc --no-ri >>$LOG_FILE
+gem install moneta --version=0.6.0 >>$LOG_FILE
+gem install net-ssh -v 2.2.2 --no-ri --no-rdoc >>$LOG_FILE
+gem install net-ssh-gateway -v 1.1.0 --no-ri --no-rdoc --ignore-dependencies >>$LOG_FILE
+gem install net-ssh-multi -v 1.1.0 --no-ri --no-rdoc --ignore-dependencies >>$LOG_FILE
+gem install ruby-shadow --no-rdoc --no-ri >>$LOG_FILE
+gem install chef --version=10.16.2 --no-rdoc --no-ri >>$LOG_FILE
 
 echo ".............Following Recipes................"
 `which chef-solo` --config solo.rb --json-attributes $json >>$LOG_FILE
