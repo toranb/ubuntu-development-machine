@@ -17,6 +17,7 @@
     "openjdk-7-jdk",
     "mysql-client",
     "libmysqlclient-dev",
+    "libsqlite3-dev",
     "sqlite3",
     "ack-grep",
     "rake",
