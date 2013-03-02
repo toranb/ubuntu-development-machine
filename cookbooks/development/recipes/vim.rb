@@ -12,13 +12,8 @@ if node[:users]
       execute "rm -rf #{home_dir}.vimrc"
       execute "rm -rf #{home_dir}.vim"
 
-      execute "cd #{home_dir} && git clone https://github.com/toranb/vimfiles.git #{home_dir}.vim"
-      execute "cd #{home_dir}.vim && rake"
-
-      execute "cd #{home_dir}.vim && mkdir -p _backup"
-      execute "cd #{home_dir}.vim && mkdir -p _temp"
-      execute "chmod 777 #{home_dir}.vim/_backup"
-      execute "chmod 777 #{home_dir}.vim/_temp"
+      execute "su -c 'cd #{home_dir} && git clone https://github.com/toranb/vimfiles.git #{home_dir}.vim' #{username}"
+      execute "su -c 'cd #{home_dir}.vim && rake' #{username}"
 
       execute "sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack"
     end
