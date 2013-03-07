@@ -3,9 +3,7 @@ if node[:users]
 
       home_dir = info[:home]
 
-      execute "rm -rf #{home_dir}virtualenvs"
-
-      directory "#{home_dir}virtualenvs" do
+      directory "#{home_dir}.virtualenvs" do
         owner username
         group username
         mode 0764
