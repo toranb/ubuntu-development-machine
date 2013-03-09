@@ -18,7 +18,7 @@ if node[:users]
       execute "rm -rf #{home_dir}.vimrc"
       execute "rm -rf #{home_dir}.gvimrc"
       execute "rm -rf #{home_dir}.viminfo"
-      execute "rm -rf #{home_dir}.vim"
+      execute "rm -rf #{home_dir}.zshrc"
 
       execute "su -c 'cd #{home_dir} && git init' #{username}"
       execute "su -c 'cd #{home_dir} && git remote add origin https://github.com/mattjmorrison/.dotfiles.git' #{username}"
