@@ -42,9 +42,9 @@ fi
 workon_virtualenv() {
   if [ -e .git ]; then
     current_dir="${PWD##*/}"
-    if [ -e ~/virtualenvs/$current_dir ]; then
+    if [ -e ~/.virtualenvs/$current_dir ]; then
       deactivate >/dev/null 2>&1
-      source ~/virtualenvs/$current_dir/bin/activate
+      source ~/.virtualenvs/$current_dir/bin/activate
     fi
   fi
 }
