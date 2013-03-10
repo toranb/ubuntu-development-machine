@@ -31,18 +31,16 @@ If you prefer zsh instead of bash, run the command below and reboot
 
 What your development machine looks like after the installer
 -----------------
-This installer is built on a great deal of opinions so it's good to know what get after it completes
+This installer is built on a great deal of opinions so it's good to know what is on your machine after it completes
 
     The most current stable build of google-chrome
-	The most current stable release of rvm + ruby 1.9.3
-    A stable version of node.js 0.8.9 + npm (1.6.1 at this time)
+	The most current stable build of rvm + ruby 1.9.3
+    A stable version of node.js 0.8.9 + npm 1.1.61
     A stable version of phantomjs 1.8.1
-    Python 2.7.3 out of the box (ships with Ubuntu/Xubuntu 12.10)
-    The most current pip (installed with easy_install)
-    The most current virtualenv
-    The most current release of vim + my custom python/ruby friendly vimrc
-    All the core mysql / postgresql / sqlite3 dependencies installed
+    Python 2.7.3 ships with Ubuntu/Xubuntu 12.10
+    The most current pip + virtualenv + virtualenvwrapper
+    The most current release of vim + my custom python and django vimrc/plugins
     A custom oh-my-zsh configuration (optional)
     A custom bash configuration
     A custom tmux configuration
-    A few other much needed debian packages such as openjdk-7, ack, nginx
+    A few other debian packages: openjdk-7, ack, nginx, mysql, postgresql, sqlite3
