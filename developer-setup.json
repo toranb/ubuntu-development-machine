@@ -14,6 +14,7 @@
     "python-setuptools",
     "python-dev",
     "openjdk-7-jdk",
+    "openssh-server",
     "mysql-client",
     "libmysqlclient-dev",
     "libsqlite3-dev",
@@ -25,13 +26,7 @@
     "libpq-dev",
     "nginx",
     "libxslt-dev",
-    "libxml2-dev",
-    "acl",
-    "eclipse",
-    "eclipse-jdt",
-    "eclipse-pde",
-    "eclipse-platform",
-    "eclipse-rcp"
+    "libxml2-dev"
   ],
   "easy_install_packages": [
     "pip"
@@ -41,8 +36,7 @@
     "virtualenvwrapper"
   ],
   "ruby_versions": [
-    "1.9.3",
-    "1.8.7"
+    "1.9.3"
   ],
   "users": {
     "toranb": {
