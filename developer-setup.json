@@ -22,7 +22,6 @@
     "ack-grep",
     "rake",
     "postgresql",
-    "postgresql-server-dev-all",
     "libpq-dev",
     "nginx",
     "libxslt-dev",
