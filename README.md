@@ -6,7 +6,7 @@ Before you can run the installer
 -----------------------
 If you have not already done so, install git locally and pull down this project
 
-1. sudo apt-get install git -y
+1. sudo apt-get install git-core -y
 2. git clone https://github.com/toranb/ubuntu-development-machine.git chef
 
 Configuring the installer
