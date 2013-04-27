@@ -1,6 +1,6 @@
 Ubuntu-Development-Machine
 ==========================
-This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu or Xubuntu 12.10 development machine.
+This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu or Xubuntu 13.04 development machine.
 
 Before you can run the installer
 -----------------------
@@ -33,11 +33,12 @@ What your development machine looks like after the installer
 -----------------
 This installer is built on a great deal of opinions so it's good to know what is on your machine after it completes
 
-    The most current stable build of google-chrome
-	The most current stable build of rvm + ruby 1.9.3
+    The most current stable build of google-chrome (will not work on 13.04 yet)
+	The most current stable build of rvm
     A stable version of node.js 0.8.9 + npm 1.1.61
     A stable version of phantomjs 1.8.1
-    Python 2.7.3 ships with Ubuntu/Xubuntu 12.10
+    Ruby 1.9.3 ships with Ubuntu/Xubuntu 13.04
+    Python 2.7.4 ships with Ubuntu/Xubuntu 13.04
     The most current pip + virtualenv + virtualenvwrapper
     The most current release of vim + my custom python and django vimrc/plugins
     A custom oh-my-zsh configuration (optional)
