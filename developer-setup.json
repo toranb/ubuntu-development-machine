@@ -34,9 +34,6 @@
     "virtualenv",
     "virtualenvwrapper"
   ],
-  "ruby_versions": [
-    "1.9.3"
-  ],
   "users": {
     "toranb": {
       "home":"/home/toranb/",
