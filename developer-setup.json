@@ -6,7 +6,6 @@
     "development::virtualenv",
     "development::node",
     "development::phantomjs",
-    "development::chrome",
     "development::vim"
   ],
   "base_packages": [
