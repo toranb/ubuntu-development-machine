@@ -1,9 +1,6 @@
-package "vim"
-package "vim-scripts"
-package "vim-doc"
-package "vim-latexsuite"
-package "vim-gui-common"
+package "vim-tiny"
 package "vim-gnome"
+package "vim"
 package "zsh"
 package "tmux"
 
