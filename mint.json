@@ -1,0 +1,44 @@
+{
+  "run_list": [
+    "development",
+    "development::chrome",
+    "development::rvm",
+    "development::bash-profile",
+    "development::virtualenv",
+    "development::node",
+    "development::phantomjs",
+    "development::vim"
+  ],
+  "base_packages": [
+    "build-essential",
+    "python-setuptools",
+    "python-dev",
+    "openjdk-7-jdk",
+    "openssh-server",
+    "mysql-client",
+    "libmysqlclient-dev",
+    "libsqlite3-dev",
+    "sqlite3",
+    "ack-grep",
+    "rake",
+    "postgresql",
+    "libpq-dev",
+    "nginx",
+    "libxslt-dev",
+    "libxml2-dev"
+  ],
+  "easy_install_packages": [
+    "pip"
+  ],
+  "pip_packages": [
+    "virtualenv",
+    "virtualenvwrapper"
+  ],
+  "users": {
+    "toranb": {
+      "home":"/home/toranb/",
+      "full_name":"toran billups",
+      "email_address":"toranb@gmail.com"
+    }
+  }
+}
