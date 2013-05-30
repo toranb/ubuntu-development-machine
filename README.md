@@ -1,6 +1,6 @@
 Ubuntu-Development-Machine
 ==========================
-This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to install software on a (preferably fresh) Ubuntu or Xubuntu 13.04 development machine (and now Mint 14)
+This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to provision a Ubuntu/Xubuntu 13.04 or Mint 15 developer machine
 
 Before you can run the installer
 -----------------------
