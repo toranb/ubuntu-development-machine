@@ -17,13 +17,7 @@ if node[:users]
       execute "rm -rf #{home_dir}.viminfo"
       execute "rm -rf #{home_dir}.zshrc"
 
-      execute "su -c 'cd #{home_dir} && git init' #{username}"
-      execute "su -c 'cd #{home_dir} && git remote add origin https://github.com/mattjmorrison/.dotfiles.git' #{username}"
-      execute "su -c 'cd #{home_dir} && git pull origin master -f && git submodule update --recursive -f' #{username}"
-      execute "su -c 'cd #{home_dir} && git submodule update --init' #{username}"
-      execute "su -c 'cd #{home_dir} && rm -rf .vimrc' #{username}"
-      execute "su -c 'cd #{home_dir} && rm -rf .gvimrc' #{username}"
-      execute "su -c 'cd #{home_dir}.vim && rake' #{username}"
+      execute "su -c 'cd #{home_dir} && git clone https://github.com/JarrodCTaylor/imt_dotfiles.git' #{username}"
 
       execute "sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack"
     end

@@ -27,7 +27,15 @@ To setup your mint development machine
 
 	sudo ./install.sh mint.json
 
-After the installer is complete (optional zsh configuration)
+After the installer is complete run the script below to setup vim and your dotfiles
+
+  cd ~/imt_dotfiles/Linux/ && bash symlink.sh
+
+After this is complete open vim and do the following
+
+  :BundleInstall
+
+optional zsh configuration
 -----------------
 If you prefer zsh instead of bash, run the command below and reboot
 
