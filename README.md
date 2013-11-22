@@ -1,6 +1,6 @@
 Ubuntu-Development-Machine
 ==========================
-This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to provision a Ubuntu/Xubuntu 13.04 or Mint 15 developer machine
+This package uses a bash script and [Opscode Chef](http://wiki.opscode.com/display/chef/Home) to provision a Ubuntu/Xubuntu 13.10 or Mint 15 developer machine
 
 Before you can run the installer
 -----------------------
@@ -49,8 +49,8 @@ This installer is built on a great deal of opinions so it's good to know what is
 	The most current stable build of rvm
     The most current stable build of node.js + npm
     A stable version of phantomjs 1.8.1
-    Ruby 1.9.3 ships with Ubuntu/Xubuntu 13.04
-    Python 2.7.4 ships with Ubuntu/Xubuntu 13.04
+    Ruby 1.9.3 ships with Ubuntu/Xubuntu 13.10
+    Python 2.7.5 ships with Ubuntu/Xubuntu 13.10
     The most current pip + virtualenv + virtualenvwrapper
     The most current release of vim + my custom python and django vimrc/plugins
     A custom oh-my-zsh configuration (optional)
